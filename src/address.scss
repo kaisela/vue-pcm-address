@@ -1,0 +1,144 @@
+@reset-global mobile;
+html{
+  font-size: 10px;
+}
+.address-pc{
+  width: 454px;
+  border: 1px solid #ced1d9;
+
+  .address-tabs{
+    width: 100%;
+    background-color: #f5f8fa;
+    ul{
+      font-size: 0px;
+      list-style: none;
+    }
+    li{
+      display: inline-block;
+      a{
+        display: inline-block;
+        width: 113px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 14px;
+        color: #1c3a50;
+      }
+      a.active{
+        background-color: #fff;
+      }
+    }
+
+  }
+  .address-panels{
+    .block-index{
+      display: table;
+      padding: 5px;
+      .address-label{
+        display: table-cell;
+        vertical-align: top;
+        width: 60px;
+        padding-left: 12px;
+        color: #1c3a50;
+        line-height: 30px;
+        padding-top: 0;
+      }
+      .address-btns{
+
+        button{
+          margin: 0;
+          font-size: 14px;
+          color: gray;
+          height: 30px;
+          text-align: center;
+          border: 0;
+          background: transparent;
+          cursor: pointer;
+          padding: 0 12px;
+          outline: none;
+        }
+        button:hover{
+          background-color: #e1e1e1;
+          border-radius: 15px;
+        }
+        button:focus{
+          background-color: #e1e1e1;
+          border-radius: 15px;
+          border:0px;
+        }
+        button.active{
+          color: #fff;
+          background-color: #7ec5fc;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}
+.address-mobile{
+  width: 100%;
+  padding-top: 4.2rem;
+  position: relative;
+  .address-tabs{
+    position: absolute;
+    width: 100%;
+    top:0;
+    ul{
+      font-size: 0px;
+      list-style: none;
+    }
+    li{
+      display: inline-block;
+      width: 25%;
+      a{
+        display: inline-block;
+        width: 100%;
+        height: 4.2rem;
+        line-height: 4.2rem;
+        text-align: center;
+        font-size: 1.4rem;
+        color: #1c3a50;
+        border-bottom: .2rem solid #e1e1e1;
+      }
+      a.active{
+        background-color: #fff;
+        color: #ff6000;
+        border-bottom: .2rem solid #ff6000;
+      }
+    }
+  }
+  .address-panels{
+    .block-index{
+      .address-label{
+        padding-left: 1.2rem;
+        color: #1c3a50;
+        height: 1.6rem;
+        line-height: 1.6rem;
+        background: linear-gradient(to bottom, #e1e1e1 0%,#fff 100%);
+      }
+      .address-btns{
+        button{
+          width: 100%;
+          margin: 0;
+          padding-left: 1.2rem;
+          font-size: 1.2rem;
+          color: gray;
+          height: 4rem;
+          line-height: 4rem;
+          border: 0;
+          border-bottom: .1rem solid #e1e1e1;
+          text-align: left;
+          background: transparent;
+          cursor: pointer;
+          outline: none;
+        }
+        button:hover{
+          color: #ff6000;
+        }
+        button.active{
+          color: #ff6000;
+        }
+      }
+    }
+  }
+}
