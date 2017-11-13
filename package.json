@@ -3,11 +3,22 @@
   "description": "Address control that supports both mobile and PC ends",
   "version": "1.0.0",
   "author": "kaisela",
-  "private": false,
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
   "scripts": {
     "dev": "npm run lint && cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "npm run lint && cross-env NODE_ENV=production webpack --progress --hide-modules",
     "lint": "eslint src/**/* test/**/* packages/**/*.{js,vue} build/**/* --quiet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kaisela/vue-pcm-address.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaisela/vue-pcm-address/issues"
   },
   "dependencies": {
     "vue": "^2.4.4"
