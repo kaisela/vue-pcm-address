@@ -3,7 +3,7 @@
   "description": "Address control that supports both mobile and PC ends",
   "version": "1.0.0",
   "author": "kaisela",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "npm run lint && cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "npm run lint && cross-env NODE_ENV=production webpack --progress --hide-modules",

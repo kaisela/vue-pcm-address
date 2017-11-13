@@ -47,7 +47,8 @@ module.exports = {
       {
         test: /\.css$/,
         loader: 'css-loader!post-loader'
-      }
+      },
+      { test: /\.(eot|svg|ttf|woff|woff2)(\?.*)?$/, loader: 'file-loader' }
     ]
   },
   resolve: {
@@ -57,6 +58,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
+    host:'0.0.0.0',
     noInfo: true,
     overlay: true
   },
